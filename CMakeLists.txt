@@ -14,7 +14,7 @@ cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 # set options for build target
 ############################################################
 OPTION(BUILD_TEST "Build test software" OFF)
-OPTION(TASKING_COMPILER "Build using the tasking compiler" OFF)
+OPTION(TASKING_TRICORE_COMPILER "Build using the tasking compiler" OFF)
 
 
 ############################################################
