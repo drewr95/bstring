@@ -18,14 +18,6 @@ OPTION(TASKING_TRICORE_COMPILER "Build using the tasking compiler" OFF)
 
 
 ############################################################
-# set tasking compiler 
-############################################################
-if (TASKING_TRICORE_COMPILER)
-    file(TO_CMAKE_PATH "cmake/toolchains/Toolchain-Tasking-Tricore_v6.3r1.cmake" CMAKE_TOOLCHAIN_FILE)
-endif ()
-
-
-############################################################
 # set the project name
 ############################################################
 project(bstring
