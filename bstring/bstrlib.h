@@ -31,6 +31,8 @@
  * GNU General Public License Version 2 (the "GPL").
  */
 
+// clang-format off
+
 /**
  * \file
  * \brief C implementaion of bstring functions
@@ -42,7 +44,7 @@
 #ifndef BSTRLIB_H
 #define BSTRLIB_H
 
-#if __GNUC__ >= 4
+#if __GNUC__ >= 4 && !defined(_TASKING_C_TRICORE_)
 #define BSTR_PUBLIC \
 	__attribute__ ((visibility ("default")))
 #define BSTR_PRIVATE \
