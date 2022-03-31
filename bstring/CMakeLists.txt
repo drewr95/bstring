@@ -37,7 +37,7 @@ target_compile_definitions(bstring PRIVATE
 ############################################################
 # set compiler options
 ############################################################
-if (TASKING_TRICORE_COMPILER)
+if (${CMAKE_C_COMPILER_ID} STREQUAL "Tasking")
     target_compile_options(bstring PRIVATE
         --compact-max-size=200
         --cpu=tc33x
